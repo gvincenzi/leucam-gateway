@@ -17,6 +17,12 @@ zuul:
     connect-timeout-millis: 15000
     socket-timeout-millis: 15000
   ignored-services: '*'
+  routes:
+    leucam-order-service:
+      path: /leucam-order-service/**
+      serviceId: leucam-order-service
+      stripPrefix : true
+      sensitiveHeaders:
 
 hystrix:
   command:
