@@ -23,6 +23,11 @@ zuul:
       serviceId: leucam-order-service
       stripPrefix : true
       sensitiveHeaders:
+    leucam-payment-service:
+      path: /leucam-payment-service/**
+      serviceId: leucam-payment-service
+      stripPrefix: true
+      sensitiveHeaders:
 
 hystrix:
   command:
